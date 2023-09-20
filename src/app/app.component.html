@@ -1,5 +1,15 @@
 <h1>Hello Angular 14!</h1>
 
 <menu></menu>
+<p>Start editing to see some magic happen!</p>
 
-<my-button></my-button>
+<!-- Interpolação -->
+<my-button label="Olá Mundo!"></my-button>
+<my-button label="{{ buttonSecond }}"></my-button>
+
+<!-- Property Binding -->
+<my-button [label]="buttonLabel"></my-button>
+<my-button [label]="'CARRINHO'"></my-button>
+
+<!-- Two-way data binding -->
+<app-entry-data></app-entry-data>
